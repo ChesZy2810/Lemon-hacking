@@ -1,5 +1,5 @@
-clear
-cp 4716.py P.py error.py O.py dep.py error_pay.py $PREFIX/opt
+pkg install figlet
+clear && cp 4716.py P.py error.py O.py dep.py error_pay.py $PREFIX/opt
 cp payload payload6 ssh php Handler Handler6 $HOME
 cd
 chmod +x php
