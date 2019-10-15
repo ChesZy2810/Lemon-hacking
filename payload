@@ -1,7 +1,10 @@
 clear
 figlet L e m o n
 figlet H a c k i n g
-python $PREFIX/opt/O.py
-ssh -o "ExitOnForwardFailure yes" -R 4444:localhost:4444 serveo.net
+echo By Lemon Hacking
+echo LHOST=serveo.net
+echo LPORT=4716
+ssh -o "ExitOnForwardFailure yes" -R 4716:localhost:4716 serveo.net
 clear
-python $PREFIX/opt/error_pay.py
+echo Port is in use
+echo Please try again later
