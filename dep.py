@@ -1,6 +1,0 @@
-print ("This script belongs to Lemon Hacking")
-print ("Starting your local php Server")
-print (".")
-print (".")
-print (".")
-print (".")
