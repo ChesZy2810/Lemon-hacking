@@ -1,6 +1,6 @@
+
 clear
-echo This script belongs to Lemon Hacking
-echo Starting your local php Server
+echo [+]  Starting your local php Server | lolcat
 echo .
 echo .
 echo .
@@ -9,4 +9,4 @@ figlet L e m o n
 figlet H a c k i n g
 php -t $HOME/Lemon -S localhost:4545
 clear
-echo 'Please make sure you are connected to the Internet :('
+printf "\033[1;31m[-] Please make sure you are connected to the Internet :(\033[0m\n"
