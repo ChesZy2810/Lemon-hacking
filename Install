@@ -7,6 +7,8 @@ pkg install figlet
 clear
 pkg install python
 clear
+pkg install ruby
+clear
 gem install lolcat
 clear
 pkg install toilet
@@ -18,4 +20,12 @@ chmod +x payload
 chmod +x Handler
 cd Lemon
 clear
+echo Do you have Metasploit Installed? | lolcat
+read ans
+if [ $ans = no ]
+then
+echo Installing Metasploit.. | lolcat && pkg install unstable-repo && clear && pkg install metasploit && clear
 echo Installed Succesfully | lolcat
+else
+echo Installed Succesfully | lolcat
+fi
