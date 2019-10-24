@@ -12,12 +12,13 @@ clear
 gem install lolcat
 clear
 pkg install toilet
-clear && cp Handler payload ssh php $HOME
+clear && cp Handler payload ssh php persistence.sh $HOME
 cd
 chmod +x php
 chmod +x ssh
 chmod +x payload
 chmod +x Handler
+chmod + x persistence.sh
 cd Lemon
 clear
 echo Do you have Metasploit Installed? | lolcat
