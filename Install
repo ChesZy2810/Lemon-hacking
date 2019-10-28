@@ -18,7 +18,7 @@ chmod +x php
 chmod +x ssh
 chmod +x payload
 chmod +x Handler
-chmod + x persistence.sh
+chmod +x persistence.sh
 cd Lemon
 clear
 echo Do you have Metasploit Installed? | lolcat
