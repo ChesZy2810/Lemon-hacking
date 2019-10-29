@@ -26,7 +26,7 @@ read ans
 if [ $ans = no ]
 then
 echo Installing Metasploit.. | lolcat && pkg install unstable-repo && clear && pkg install metasploit && clear
-echo Installed Succesfully | lolcat
+pkg install unstable-repo && pkg install metasploit && clear && echo Installed Succesfully | lolcat
 else
 echo Installed Succesfully | lolcat
 fi
