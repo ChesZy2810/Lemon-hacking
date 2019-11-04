@@ -10,7 +10,7 @@ if [ $port -le 1024 ]
 then
 printf "\033[1;31m[-] Port must be more than 1024\033[0m\n"  
 echo ‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡ | lolcat
-else                                                                                                                                 echo ‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡ | lolcat
+else                                                                                                                                 
 echo [+] Do you want to continue? | lolcat
 read -p '>> ' ans
 if [ $ans = yes ] 
