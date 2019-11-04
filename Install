@@ -22,7 +22,7 @@ chmod +x persistence.sh
 cd Lemon
 clear
 echo Do you have Metasploit Installed? | lolcat
-read ans
+read -p '>> ' ans
 if [ $ans = no ]
 then
 echo Installing Metasploit.. | lolcat && pkg install unstable-repo && clear && pkg install metasploit && clear
