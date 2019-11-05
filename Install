@@ -12,7 +12,7 @@ clear
 gem install lolcat
 clear
 pkg install toilet
-clear && cp Handler payload ssh php persistence.sh $HOME
+clear && cp Handler payload ssh php persistence.sh automate.rc $HOME
 cd
 chmod +x php
 chmod +x ssh
