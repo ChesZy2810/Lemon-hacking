@@ -24,15 +24,12 @@ clear
 echo Do you have Metasploit Installed? | lolcat
 read -p '>> ' ans
 if [ $ans = no ]
-# github doesn't allow me to remove lines :(
 then
 echo Do you want to install Metasploit? | lolcat
 read -p '>>' asw
 if [ $asw = yes ]
 then
-echo Installing Metasploit.. | lolcat && pkg install unstable-repo &&>
-else
-echo Installed Succesfully | lolcat
+echo Installing Metasploit.. | lolcat && pkg install unstable-repo && clear
 fi
 fi
 
