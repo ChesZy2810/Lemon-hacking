@@ -12,14 +12,14 @@ clear
 gem install lolcat
 clear
 pkg install toilet
-clear && cp Handler payload ssh php persistence.sh automate.rc $HOME
-cd
+clear && cp Handler payload ssh php persistence.sh automate.rc $PREFIX/bin/
+cd $PREFIX/bin/
 chmod +x php
 chmod +x ssh
 chmod +x payload
 chmod +x Handler
 chmod +x persistence.sh
-cd Lemon
+cd
 clear
 echo Do you have Metasploit Installed? | lolcat
 read -p '>> ' ans
@@ -30,8 +30,11 @@ read -p '>>' asw
 if [ $asw = yes ]
 then
 echo Installing Metasploit.. | lolcat && pkg install unstable-repo && clear
+pkg install metasploit
 fi
 fi
+
+
 
 
 
