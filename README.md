@@ -8,7 +8,7 @@ How to use :-
 
 1.Run php by typing "php"
 
-2.Run say by typing "ssh" and copy the link you get.   [NEW SESSION]
+2.Run ssh by typing "ssh" and copy the link you get.   [NEW SESSION]
 
 3.Forward TCP comnections by typing "payload", choose a port of your own and the payload's name, it will take a little time to create and upload the payload with the specified port and name.
 
